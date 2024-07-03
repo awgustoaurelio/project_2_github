@@ -3,7 +3,7 @@ from pages.login_page import LoginPage
 from pages.dashboard_page import DashboardPage
 
 
-@pytest.mark.parametrize('username, password', [    # В одном тесте мы проверили 2 логина/пароля!
+@pytest.mark.parametrize('username, password', [    # Параметризация тестов. В одном тесте мы проверили 2 логина/пароля!
     ('user', 'user'),
     ('admin', 'admin')
 ])

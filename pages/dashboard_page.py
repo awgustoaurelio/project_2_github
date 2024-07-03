@@ -6,7 +6,7 @@ class DashboardPage:
         self.profile = page.locator('#usernameDisplay')
         self.logout = page.locator('#logout')
 
-    def assert_welcome_message(self, message):
+    def assert_welcome_message(self, message):    # Забавно, метод с ассертом, т.е. ассерт уже не надо будет прописывать в самом тесте
         expect(self.profile).to_have_text(message)
     
 # https://zimaev.github.io/pom/index.html
